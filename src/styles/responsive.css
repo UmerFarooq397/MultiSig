@@ -1,0 +1,457 @@
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    padding: 20px 2%;
+  }
+}
+@media (max-width:998px) {
+  .homepage .homeContainer .homeText h1 {
+ 
+    font-size: 65px;
+   
+}
+  
+}
+
+@media (max-width:767.98px) {
+  .homepage .homeContainer .homeText h1 {
+    font-size: 55px;
+}
+
+  
+}
+@media only screen and (max-width: 768px) {
+  .finalMainHeading {
+    gap: 0px;
+  }
+  .finalBtn {
+    width: 18% !important;
+  }
+  .finalInput p {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 644px) {
+  .navbar h1 {
+    display: none;
+  }
+
+  .navbar .navItems .notifications {
+    display: none;
+  }
+
+  .hamburgur {
+    /* display: block; */
+    font-size: 28px;
+    position: absolute;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 573px) {
+  .navbar .navItems .walletDetails .chainName {
+    font-size: 12px;
+  }
+
+  .navbar .navItems .walletDetails .chainAddress {
+    font-size: 12px;
+  }
+
+  .navbar .navItems .walletDetails img {
+    width: 26px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .homepage .homeContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 85px;
+    margin-top: 5%;
+  }
+
+  .homepage .homeContainer .homeText {
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+}
+@media (max-width:998px) {
+  .homepage .homeContainer {
+
+    gap: 45px;
+
+}
+  
+}
+
+@media only screen and (max-width: 1326px) {
+  .selectContainer {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 608px) {
+  .netWorkDetails,
+  .walletDetails,
+  .nameDetails {
+    max-width: 360px;
+  }
+
+  .smallAdd {
+    display: block;
+  }
+
+  .bigAdd {
+    display: none;
+  }
+
+  .reviewNetworkChain,
+  .reviewNetworkName,
+  .reviewOwner,
+  .reviewThreshold,
+  .estNetworkFees,
+  .platformFees {
+    justify-content: space-between;
+  }
+
+  .createSall {
+    width: 98%;
+    margin-left: 1%;
+  }
+}
+@media only screen and (max-width: 468px) {
+  .netWorkDetails,
+  .walletDetails,
+  .nameDetails {
+    min-width: 0;
+    width: 100%;
+  }
+  .createSall {
+    width: 98%;
+    margin-left: 1%;
+  }
+
+  .finalBtn {
+    width: 50% !important;
+  }
+
+  .finalMainHeading h5 {
+    font-size: 20px !important;
+  }
+
+  .notiContent {
+    display: none;
+  }
+
+  .notiContentSmall {
+    display: block;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .walletDetails,
+  .nameDetails {
+    gap: 5px;
+  }
+  .walletDetails,
+  .nameDetails,
+  .netWorkDetails {
+    width: 280px;
+  }
+
+  .finalMainHeading {
+    gap: 0px;
+  }
+
+  .createSall .selectContainer .mainSelect .mainHeading :nth-child(1) {
+    font-size: 14px;
+    line-height: 0px;
+  }
+}
+
+@media only screen and (max-width: 778px) {
+  .innerName {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  .inputContainer {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 782px) {
+  .innerInput {
+    flex-direction: column;
+  }
+
+  .inputTop #name {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .innerInput input,
+  .innerInput select {
+    width: 100%;
+  }
+
+  .nextBtn,
+  .backBtn {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .navbar {
+    padding: 20px 25px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .address {
+    display: none;
+  }
+
+  .addressRes {
+    display: block;
+  }
+
+  .navbar .navItems button {
+    font-size: 14px;
+  }
+
+  .homepage .homeContainer .homeText {
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .homepage .homeContainer .homeText h1 {
+    font-size: 32px;
+  }
+
+  .homepage .homeContainer .homeText p {
+    font-size: 14px;
+    padding: 0px 2%;
+  }
+
+  .homepage .homeContainer .homeText .homeBtns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .homepage .homeContainer .homeText .homeBtns button {
+    width: 90%;
+  }
+
+  .homepage .homeContainer img {
+    width: 311px;
+  }
+
+  .reviewNetworkChain,
+  .reviewNetworkName,
+  .reviewOwner,
+  .reviewThreshold,
+  .estNetworkFees,
+  .platformFees {
+    gap: 0;
+  }
+}
+@media (max-width:575.98px) {
+  .homeBtns a{
+    width: 100%;
+  }
+  .homepage .homeContainer {
+    gap: 15px;
+}
+.sallSetup h5, .sallSetupPrivacy h5 {
+
+    width: 45%;
+  
+}
+  
+}
+@media (max-width:1192px) {
+  .finalBtn {
+    width: 15%;
+
+}
+  
+}
+
+@media (max-width:992px) {
+  .addOwner {
+  
+    width: 30%;
+
+}
+.createSall .selectContainer .mainSelect .mainHeading :nth-child(1) {
+
+    justify-content: center;
+}
+  
+}
+@media (max-width:767.98px) {
+  .addOwner {
+  
+    width: 45%;
+
+}
+.createSall .selectContainer .mainSelect .mainHeading :nth-child(1) {
+    justify-content: center;
+}
+.finalBtn {
+    width: 30% !important;
+}
+.finalMainHeading h5 {
+
+    font-size: 21px !important;
+  
+}
+  
+}
+@media (max-width:575.98px) {
+  .addOwner {
+  
+    width: 80%;
+
+}
+.sideBar{
+  /* display: none; */
+}
+
+.inputTop p {
+ 
+    font-size: 14px;
+ 
+}
+  .finalMainHeading h5 {
+    font-size: 19px !important;
+    padding-top: 15px;
+}
+.finalBtn {
+    width: 40% !important;
+}
+.createSall .selectContainer .mainSelect .mainHeading :nth-child(1) {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.finalInput p {
+    width: 100%;
+}
+.createSall h3 {
+  
+    font-size: 28px;
+  
+}
+}
+@media (max-width:992px) {
+.dashbordContainer {
+    grid-template-columns: 100%;
+}
+.dashbordContent {
+    /* background: #03dd74; */
+ 
+    margin-left: 0%;
+}
+.sideBar {
+  
+    width: 220px;
+
+}
+.headerOverviewCard {
+
+    flex-wrap: wrap;
+}
+.overviewCardAddress {
+
+    margin-bottom: 15px;
+}
+  
+}
+
+@media (max-width:767.98px) {
+  .dashbordHome {
+  
+    flex-wrap: wrap;
+}
+.dashbordContent {
+    /* background: #03dd74; */
+    margin-left: 10%;
+}
+  .dashbordHome .overview {
+    width: 100%;
+ 
+}
+.dashbordHome .transectionQueue {
+    width: 100%;
+  
+}
+.dashbordContainer {
+    grid-template-columns: 100%;
+}
+.overview p, .transectionQueue p {
+
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+}
+
+@media (max-width:575.98px) {
+  .dashbordContainer {
+    grid-template-columns: 100%;
+}
+.dashbordContent {
+    /* background: #03dd74; */
+    margin-left: 0%;
+    padding: 0px 2%;
+}
+  
+}
+
+@media (max-width:575.98px) {
+  .sideBar {
+
+width: 100%;
+position: inherit;
+    border-radius: 16px;
+    overflow-y: unset;
+
+    margin-bottom: 20px;
+}
+.sideBar .sideBarHeader .chainName {
+
+
+    border-radius: 0px 0px 0px 0px;
+    width: 100%;
+}
+  .sideBar .sideBarHeader .sideBarItems .sideBarMenus {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 16px;
+    overflow-x: scroll;
+    flex-direction: row;
+    padding: 0px 12%;
+}
+.sideBar .sideBarHeader .sideBarItems .sideBarMenus p {
+    
+    border-radius: 45px;
+}
+.sideBar .sideBarFotter {
+    padding-top: 10px;
+}
+.newTransection{
+  display: none;
+}
+.navbar {
+    display: block !important;
+    padding: 20px 10px !important;
+
+}
+.navItems {
+
+    justify-content: space-between;
+}
+}
