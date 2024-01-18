@@ -8,7 +8,7 @@ const ReviewTable = () => {
         <div className="reviewDiv">
             <div className="reviewNetworkChain">
                 <h5>Network</h5>
-                <p>Ethereum TestNet</p>
+                <p>BSC TestNet</p>
             </div>
             <hr />
             <div className="reviewOwner">

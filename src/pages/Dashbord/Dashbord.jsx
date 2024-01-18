@@ -364,7 +364,7 @@ const Dashbord = ({ children }) => {
 
           <div className="sideBar">
             <div className="sideBarHeader">
-              <p className="chainName">Ethereum Testnet</p>
+              <p className="chainName">BSC Testnet</p>
               <div className="sideBarItems">
                 <div className="sideBarAddress">
                   <img src="../elipili.svg" alt="" />
