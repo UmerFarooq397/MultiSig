@@ -15,7 +15,7 @@ const Homepage = () => {
         <div className="homeContainer">
           <div className="homeText">
             <h1>
-              Welcome To The <span className="sall"> Sall</span>
+              Welcome To The <span className="sall"> SALL</span>
             </h1>
             <p>
               The most trusted decentralized custody protocol and collective

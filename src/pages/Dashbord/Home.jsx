@@ -19,11 +19,14 @@ const Home = () => {
       <div className="overviewPear">
        <p>Overview</p>
       </div>
+
       <div className="dashbordHome">
         <div className="overview">
    
           <OverviewCard escrow={tx_escorw} />
         </div>
+        
+      {/* Transaction Queue  */}
         <div className="transectionQueue">
           {tx_incomplete &&
             <p>{`Transaction queue (${tx_incomplete[0].length})`}</p>

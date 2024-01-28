@@ -6,7 +6,7 @@ import SallContext from "../../../context/SallContext";
 import Layout from "../Components/Layout";
 import { Icon } from '@iconify/react';
 import { ethers } from "ethers";
-import { useSigner, useAccount } from "wagmi";
+import {useProvider ,useSigner, useAccount } from "wagmi";
 import TranABI from "./ABI.json";
 import ABI from "../../../ABI.json";
 import ERC20abi from "./ERC20.json";
@@ -15,6 +15,7 @@ import { MdClose } from "react-icons/md";
 import axios from "axios";
 
 const Dashbord = ({ children }) => {
+  const provider = useProvider();
 
   const cntxt = useContext(SallContext);
   const router = useRouter();
@@ -37,6 +38,7 @@ const Dashbord = ({ children }) => {
     try {
       const res = await provider.getBalance(cntxt.escrow[0]);
       const formattedBalance = ethers.utils.formatEther(res);
+      console.log("TESTAESDFAFa", formattedBalance);
       cntxt.setBalance(formattedBalance);
     } catch (error) {
       console.error("Error:", error);
@@ -44,7 +46,12 @@ const Dashbord = ({ children }) => {
   }
   
   const withdrawReq = async () => {
-    console.log(assets);
+
+      const txbalance = await provider.getBalance(process.env.contract_address);
+      console.log("tesfdaa", ethers.utils.formatUnits(
+        txbalance.toString(),
+        "ether"
+      ));
     if(amount) {
       const transectionContract = new ethers.Contract(
         cntxt.escrow[0],
@@ -52,6 +59,7 @@ const Dashbord = ({ children }) => {
         signer
       );
   
+      
       const resName = await transectionContract.escrowName();
       const amountWei = ethers.utils.parseUnits(amount.toString(), "ether");
   
@@ -141,7 +149,7 @@ const Dashbord = ({ children }) => {
     );
 
     tx.wait();
-    
+    console.log("Transaction:::::", tx);
     setPopup(false);
   };
 
@@ -202,7 +210,7 @@ const Dashbord = ({ children }) => {
         <div className="popup">
           <div className="popupContainer">
             <div className="popupHeader">
-              <p>Deposite Token</p>
+              <p>Deposit Token</p>
               <button onClick={() => setPopupDeposite(false)}>
                 <MdClose />
               </button>
@@ -215,7 +223,7 @@ const Dashbord = ({ children }) => {
                 <div className="details">
                   <p>{cntxt.name}</p>
                   <div>
-                    <span className="font-bold">Eth:</span>
+                    <span className="font-bold">BNB:</span>
                     {address}
                   </div>
                 </div>
@@ -240,7 +248,7 @@ const Dashbord = ({ children }) => {
                   ) : (
                     <div className="estimatedPrice">
                       <p>Estimated fee</p>
-                      <p>{despositeestimate} ETH</p>
+                      <p>{despositeestimate} BNB</p>
                     </div>
                   )}
                 </form>
@@ -285,7 +293,7 @@ const Dashbord = ({ children }) => {
                 <div className="details">
                   <p>{cntxt.name}</p>
                   <div>
-                    <span className="font-bold">Eth:</span>
+                    <span className="font-bold">BNB:</span>
                     {cntxt.escrow[0]}
                   </div>
                 </div>
@@ -301,7 +309,7 @@ const Dashbord = ({ children }) => {
                         onChange={(e) => setAsstes(e.target.value)}
                       >
                         <option value="0x0000000000000000000000000000000000000000">
-                          ETH
+                          BNB
                         </option>
                         {cntxt.token ? (
                           cntxt.token.map((data,i) => {
@@ -331,7 +339,7 @@ const Dashbord = ({ children }) => {
                   ) : (
                     <div className="estimatedPrice">
                       <p>Estimated fee</p>
-                      <p>{estimate} ETH</p>
+                      <p>{estimate} BNB</p>
                     </div>
                   )}
                 </form>
@@ -369,7 +377,7 @@ const Dashbord = ({ children }) => {
                 <div className="sideBarAddress">
                   <img src="../elipili.svg" alt="" />
                   <p>
-                    Eth:
+                    BNB:
                     {cntxt.escrow
                       ? cntxt.escrow[0].slice(0, 4) +
                         "..." +
@@ -419,6 +427,50 @@ const Dashbord = ({ children }) => {
                     >
                    <span><Icon icon="bi:arrow-down-up" /></span> Transactions
                     </p>
+                  </Link>
+                  <Link href="">
+                  <p
+                      className={
+                        router.pathname === ""
+                          ? "active"
+                          : ""
+                      }
+                    >
+                   <span><Icon icon="tabler:transfer" /></span> Transfer
+                   </p>
+                  </Link>
+                  <Link href="">
+                  <p
+                      className={
+                        router.pathname === ""
+                          ? "active"
+                          : ""
+                      }
+                    >
+                    <span><Icon icon="ph:swap" /></span> Swap
+                   </p>
+                  </Link>
+                  <Link href="">
+                  <p
+                      className={
+                        router.pathname === ""
+                          ? "active"
+                          : ""
+                      }
+                    >
+                   <span><Icon icon="fluent-mdl2:payment-card" /></span> Deposit with a card
+                  </p>
+                  </Link>
+                  <Link href="">
+                  <p
+                      className={
+                        router.pathname === ""
+                          ? "active"
+                          : ""
+                      }
+                    >
+                    <span><Icon icon="fluent:person-support-28-filled" /></span> Support
+                   </p>
                   </Link>
                 </div>
               </div>

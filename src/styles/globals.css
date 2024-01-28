@@ -116,7 +116,7 @@ button:hover {
 }
 
 .homepage .homeContainer .homeText .sall {
-    background: linear-gradient(98.26deg, #01cd15 7.88%, #03dd74 96.23%);
+    background: linear-gradient(98.26deg, #315399 7.88%, #315399 96.23%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -938,6 +938,7 @@ button:hover {
 .dashbordHome .transectionQueue {
     width: 50%;
     display: flex;
+    margin-top: -16px;
     flex-direction: column;
     gap: 0;
 }

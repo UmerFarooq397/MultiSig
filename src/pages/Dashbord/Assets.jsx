@@ -38,13 +38,13 @@ const Assets = () => {
             <tr>
               <td className="firstCell">
                 <div className="ellipse"></div>
-                {"ETH"}
+                {"BNB"}
               </td>
               <td>
                 {balance && ethers.utils.formatUnits(
                   balance.toString(),
                   "ether"
-                )}  ETH
+                )}  BNB
               </td>
             </tr>
 
